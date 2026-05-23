@@ -8,56 +8,74 @@
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <h1>Explore Egypt</h1>
+<header>
+  <nav class="navbar">
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <h1>Explore Egypt</h1>
 
-  <section class="hero">
-    <h2>Discover The Beauty Of Egypt</h2>
-    <p>Best beaches, cities and tourist attractions.</p>
-  </section>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-  <section class="search-section">
-    <input type="text" id="searchInput" placeholder="Search for a place...">
-    <button onclick="searchPlace()">Search</button>
+    <div class="nav-search">
 
-    <div id="result"></div>
-  </section>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a place..."
+      >
 
-  <section class="cards">
+      <button onclick="searchPlace()">
+        Search
+      </button>
 
-    <div class="card">
-      <img src="images/beach.jpg" alt="Beach">
-      <h3>Red Sea</h3>
-      <p>Enjoy beautiful beaches and clear water.</p>
+      <button
+        onclick="clearSearch()"
+        class="clear-btn"
+      >
+        Clear
+      </button>
+
     </div>
 
-    <div class="card">
-      <img src="images/pyramids.jpg" alt="Pyramids">
-      <h3>Pyramids</h3>
-      <p>Visit one of the seven wonders of the world.</p>
-    </div>
+  </nav>
+</header>
 
-    <div class="card">
-      <img src="images/city.jpg" alt="City">
-      <h3>Cairo</h3>
-      <p>Explore the capital city and its history.</p>
-    </div>
+<div id="result"></div>
 
-  </section>
+<section class="hero">
+  <h2>Discover The Beauty Of Egypt</h2>
+  <p>Best beaches, cities and tourist attractions.</p>
+</section>
 
-  <footer>
-    <p>© 2026 Explore Egypt | All Rights Reserved</p>
-  </footer>
+<section class="cards">
 
-  <script src="script.js"></script>
+  <div class="card">
+    <img src="./images/beach.jpg" alt="Beach">
+    <h3>Aswan</h3>
+    <p>Enjoy beautiful beaches and clear water.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/city.jpg" alt="Pyramids">
+    <h3>Pyramids</h3>
+    <p>Visit one of the seven wonders of the world.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/cairo.jpg" alt="Cairo">
+    <h3>Cairo</h3>
+    <p>Explore the capital city and its history.</p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Explore Egypt | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

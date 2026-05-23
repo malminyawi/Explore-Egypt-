@@ -8,15 +8,38 @@ function searchPlace() {
   let result = document.getElementById("result");
 
   if (input === "beach") {
-    result.innerHTML = "Best Result: Red Sea Beach";
+
+    result.innerHTML =
+      "Best Result: Red Sea Beach";
+
   }
+
   else if (input === "pyramids") {
-    result.innerHTML = "Best Result: Giza Pyramids";
+
+    result.innerHTML =
+      "Best Result: Giza Pyramids";
+
   }
+
   else if (input === "cairo") {
-    result.innerHTML = "Best Result: Cairo City";
+
+    result.innerHTML =
+      "Best Result: Cairo City";
+
   }
+
   else {
-    result.innerHTML = "No Results Found";
+
+    result.innerHTML =
+      "No Results Found";
+
   }
+}
+
+function clearSearch() {
+
+  document.getElementById("searchInput").value = "";
+
+  document.getElementById("result").innerHTML = "";
+
 }
